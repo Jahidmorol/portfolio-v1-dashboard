@@ -3,21 +3,21 @@ import { baseApi } from "../../api/baseApi";
 const blogApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     createBlog: builder.mutation({
-      query: (userInfo) => ({
-        url: "/blogs/createBlog",
+      query: (dataInfo) => ({
+        url: "/blogs",
         method: "POST",
-        body: userInfo,
+        body: dataInfo,
       }),
     }),
     getBlogs: builder.query({
       query: () => ({
-        url: "/blogs/getBlogs",
+        url: "/blogs",
         method: "GET",
       }),
     }),
     getSingleBlog: builder.query({
       query: (id) => ({
-        url: `/blogs/getSingleBlog/${id}`,
+        url: `/blogs/${id}`,
         method: "GET",
       }),
     }),
@@ -25,7 +25,7 @@ const blogApi = baseApi.injectEndpoints({
       query: (data) => {
         // console.log(userInfo);
         return {
-          url: `/blogs/updateSingleBlog/${data?.id}`,
+          url: `/blogs/${data?.id}`,
           method: "PUT",
           body: data?.info,
         };
@@ -33,7 +33,7 @@ const blogApi = baseApi.injectEndpoints({
     }),
     deleteBlog: builder.mutation({
       query: (id) => ({
-        url: `/blogs/deleteSingleBlog/${id}`,
+        url: `/blogs/${id}`,
         method: "DELETE",
       }),
     }),

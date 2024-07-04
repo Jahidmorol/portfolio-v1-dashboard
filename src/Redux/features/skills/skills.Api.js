@@ -11,7 +11,7 @@ const skillsApi = baseApi.injectEndpoints({
     }),
     getSkills: builder.query({
       query: () => ({
-        url: "/skill",
+        url: "/skill/dashboard",
         method: "GET",
       }),
     }),

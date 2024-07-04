@@ -5,11 +5,16 @@ import Blog from "../pages/blog/Blog";
 import AddProject from "../pages/project/AddProject";
 import LoginPage from "../pages/login/Login";
 import AddExperience from "../pages/experience/AddExperience";
+import PrivateRoute from "../PrivateRoute";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>,
+    element: (
+      <PrivateRoute>
+        <App />
+      </PrivateRoute>
+    ),
     children: [
       {
         path: "/",

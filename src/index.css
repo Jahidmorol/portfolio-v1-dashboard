@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@100..900&display=swap");
+
+/* font-family: "Inter", sans-serif;  */
+/* font-family: "Great Vibes", cursive;   */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply m-0 p-0 box-border text-base font-["Inter",_sans-serif];
+  }
+
+  /* side nav  */
+  .nav-link {
+    @apply flex items-center gap-5 text-[#e2e9f3] py-3 transition-all ease-out rounded-lg hover:px-2 hover:bg-[#d6e3f330] duration-300;
+  }
+}
+
+.ql-editor.ql-blank::before {
+  color: #979da2 !important;
+}

@@ -43,7 +43,7 @@ const Skill = () => {
 
   const deleteHandler = async (id) => {
     const res = await deletedSkill(id);
-    console.log(res);
+
     if (res?.data?.success === true) {
       toast.success("Skill Delete Successfull!");
       refetch();
