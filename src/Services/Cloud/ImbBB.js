@@ -4,7 +4,7 @@ export const uploadToImgBB = async (data) => {
 
   try {
     const response = await fetch(
-      `https://api.imgbb.com/1/upload?key=654b1e85ae0488c966b1aaf034e8cab2`,
+      `https://api.imgbb.com/1/upload?key=ead29cbef0bff96497069a3c95ca92e7`,
       {
         method: "POST",
         body: formData,

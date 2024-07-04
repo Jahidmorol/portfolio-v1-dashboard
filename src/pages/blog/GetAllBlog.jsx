@@ -39,7 +39,7 @@ const GetAllBlog = () => {
                   <p
                     dangerouslySetInnerHTML={{
                       __html:
-                        blog?.content.length > 140
+                        blog?.content?.length > 140
                           ? blog?.content.slice(0, 140) + "..."
                           : blog?.content,
                     }}
