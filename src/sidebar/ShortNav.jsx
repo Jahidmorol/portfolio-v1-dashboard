@@ -4,8 +4,8 @@ const ShortNav = () => {
   return (
     <div className="flex items-center justify-between">
       <Link to="/" className="text-2xl font-['Great_Vibes',_cursive]">
-        <span className=" text-3xl text-[#0CB0D8] hover:text-white ">F</span>
-        <span>oysal </span>
+        <span className=" text-3xl text-[#0CB0D8] hover:text-white ">J</span>
+        <span>ahid </span>
       </Link>
 
       <div className="flex items-center gap-2">
